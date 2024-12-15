@@ -1,9 +1,10 @@
 body {
     text-align: center;
+    background-color: rgba(255, 127, 80, 0.145);
   }
   
   h1 {
-    color: #333;
+    color: #fe8300;
     font-family: Arial, sans-serif;
   }
   
