@@ -37,5 +37,5 @@ function chequeoResultado() {
         mensaje.textContent = 'El número ingresado es más bajo que el número aleatorio. Probá con uno más alto!';
         mensaje.style.color = "red";        
     }    
-    intentos.textContent = `${parseInt(intentos.textContent) + 1}`;
+    intentos.textContent = `$x|{parseInt(intentos.textContent) + 1}`;
 }
