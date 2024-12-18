@@ -66,3 +66,24 @@ console.log(fechaToString3);
 console.log(typeof(fechaToString3));
 
 //Number a Boolean
+let y = 1;
+let verdadero = Boolean(y);
+console.log(verdadero);
+console.log(typeof(verdadero));
+
+let z = 0;
+let falso = Boolean(z);
+console.log(falso);
+console.log(typeof(falso));
+
+
+//boolean a string
+let k = String(true);
+console.log(k, typeof(k));//true -cómo string-, string
+
+//JSON.stringify convierte objetos a srtring
+//es la manera de conversión que los procesa a texto
+let objeto = { nombre: "Cristian", edad: 30 };
+let jsonString = JSON.stringify(objeto);
+console.log(jsonString, typeof(jsonString));//{"nombre":"Cristian","edad":30} -cómo string-, string
+

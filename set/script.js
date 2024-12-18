@@ -31,10 +31,19 @@ console.log(`${buscado} está en el set: ${exite}`); //imprime: false
 //definimos el array
 let articulos = ["mouse", "teclado", "monitor", "mouse", "CPU"];
 
+
 function convertirUnitario (elementos){
-    return new Set(elementos);
+    if (!Array.isArray(elementos)) {
+        throw new Error("El argumento debe ser un array");
+        return //salgo
+    }//valido que sea un array lo que me pasan!!
+    let setUnicos = new Set(elementos) //lo convierto a set para eliminar duplicados
+    let arrayUnicos = [...setUnicos]
+    // lo almaceno en array 
+    //tengo que usar el spread operator en elemento para que funcione
+    return arrayUnicos
 }
 
 let articulosUnicos = convertirUnitario(articulos);
-console.log(`Los artículos únicos son ${JSON.stringify([...articulosUnicos])}`);
+console.log(`Los artículos únicos son ${articulosUnicos.join(", ")}`);
 console.log (articulosUnicos);

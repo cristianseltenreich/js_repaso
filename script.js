@@ -1,5 +1,9 @@
 // atajos teclado
 // alt + 96 ` (backticks)
+
+// (el código Unicode para el backtick).
+//Mantener presionada la tecla Ctrl + Shift + U. Escribir 60. Enter.
+
 // Ctrl + }  comentario //
 // Mayúsc + Ctrl + f --> acomoda el código indentándolo correctamente
 

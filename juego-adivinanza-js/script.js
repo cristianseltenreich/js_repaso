@@ -10,8 +10,6 @@ let mensaje = document.getElementById('mensaje');
 
 let intentos = document.getElementById('intentos');
 
-
-
 //esta acción se va a ejecutar cuando se haga click
 //en el botón Comprobar
 function chequeoResultado() {
