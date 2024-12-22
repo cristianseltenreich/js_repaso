@@ -17,13 +17,29 @@ console.log(result); // true
 // expresión regular coincide con la cadena, y false en caso contrario.
 //Puedes utilizar expresiones regulares para buscar, reemplazar, dividir y validar
 
-//regex para validar un email
-console.log('regex para validar un email');
-var email = 'pepe-email.com.ar';
-console.log(email);
-var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-var result = regex.test(email);   
+// cadenas de caracteres. Por ejemplo, puedes buscar todas las coincidencias de
+// una expresión regular en una cadena utilizando el método match():
+var str = 'Hola mundo';
+var regex = /o/g;
+var result = str.match(regex);
+console.log(result); // ['o', 'o']
+
+//modificadores de expresiones regulares más comunes en JavaScript:
+// i: Ignora mayúsculas y minúsculas.
+// g: Busca todas las coincidencias en lugar de detenerse en la primera.
+// m: Trata la cadena como múltiples líneas.
+// u: Trata la cadena como unicode.
+// s: Trata la cadena como una sola línea.
+// y: Realiza una búsqueda pegajosa
+//Para utilizar un modificador en una expresión regular, debes colocarlo después
+// de la expresión regular. Por ejemplo, /abc/g busca todas las coincidencias de
+
+// la secuencia de caracteres 'abc' en una cadena.
+//Veamos un ejemplo de cómo utilizar el modificador i para ignorar mayúsculas y
+// minúsculas en una expresión regular:
+var str = 'Hola mundo';
+var regex = /mundo/i;
+var result = regex.test(str);
 console.log(result); // true
-email = 'pepe@email.com.ar';
-console.log(email);
-result = regex.test(email);
+
+
