@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -37,4 +38,32 @@ li a:hover:not(.active) {
     padding: 1px 16px;
     height: 1000px;
     background-color: #eeacb850;
+}
+
+h4 {
+    color: #007599;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+#comprar {
+    display: none;
+    background-color: #28a745; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 17px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+    margin-top: 1rem; /* Espacio arriba del botón */
+    margin-bottom: 1rem; /* Espacio abajo del botón */
+}
+
+#comprar:hover {
+    background-color: #218838; /* Color de fondo más oscuro al pasar el mouse */
 }
