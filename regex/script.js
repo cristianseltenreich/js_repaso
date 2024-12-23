@@ -8,9 +8,9 @@
 // de forma más sencilla. Por ejemplo, /abc/ es una expresión regular que busca
 // la secuencia de caracteres 'abc' en una cadena.
 //veamos un ejemplo de cómo utilizar expresiones regulares en JavaScript:
-var str = 'Hola mundo';
-var regex = /mundo/;
-var result = regex.test(str);
+let str = 'Hola mundo';
+let regex = /mundo/;
+let result = regex.test(str);
 console.log(result); // true    
 //En este ejemplo, la expresión regular /mundo/ busca la secuencia de caracteres
 // 'mundo' en la cadena 'Hola mundo'. La función test() devuelve true si la
@@ -19,9 +19,9 @@ console.log(result); // true
 
 // cadenas de caracteres. Por ejemplo, puedes buscar todas las coincidencias de
 // una expresión regular en una cadena utilizando el método match():
-var str = 'Hola mundo';
-var regex = /o/g;
-var result = str.match(regex);
+str = 'Hola mundo';
+regex = /o/g;
+result = str.match(regex);
 console.log(result); // ['o', 'o']
 
 //modificadores de expresiones regulares más comunes en JavaScript:
@@ -37,9 +37,9 @@ console.log(result); // ['o', 'o']
 // la secuencia de caracteres 'abc' en una cadena.
 //Veamos un ejemplo de cómo utilizar el modificador i para ignorar mayúsculas y
 // minúsculas en una expresión regular:
-var str = 'Hola mundo';
-var regex = /mundo/i;
-var result = regex.test(str);
+str = 'Hola mundo';
+regex = /mundo/i;
+result = regex.test(str);
 console.log(result); // true
 
 
