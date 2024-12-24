@@ -1,18 +1,21 @@
-//crear funcion para validar email con regex
-//regex
+//aplicacion de práctica para validar email con regex
 //validar email
-//funcion para validar email
-function validaEmail(email) {
-  var regex = /\S+@\S+\.\S+/;
-  return regex.test(email);
-}
+
 // Path: regex/validaemail/index.html
 // Compare this snippet from regex/index.html:
-let email = document.getElementById('email').value;
+let email = document.getElementById('email').value; //obtener valor del input
 let result;
-let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-let resultadoValidar = document.getElementById("resultadoValidar");
+let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; //expresión regular para validar email
+let resultadoValidar = document.getElementById("resultadoValidar"); //obtener elemento para mostrar resultado
 
+//funcion para validar email
+function validaEmail(email) {
+    var regex = /\S+@\S+\.\S+/;
+    return regex.test(email);
+  }
+
+
+//valida email en tiempo real cambiando el color del borde del input
 document.getElementById('email').addEventListener('input', function() {
     email = this.value;
     result = validaEmail(email);
@@ -23,6 +26,7 @@ document.getElementById('email').addEventListener('input', function() {
     }
 });
 
+//boton para validar email
 function botonValidarEmail() {
     if (result) {
         resultadoValidar.textContent = 'Email válido';
