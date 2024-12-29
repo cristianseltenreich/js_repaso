@@ -41,7 +41,7 @@ fetch(`${urlBase}/${queryPost}`, {//ruta y query
 
 //put - se usa para actualizar información
 //datos que se enviarán
-let numPosteoPut = 1;//nro del posteo a actualizar
+let numPosteoPut = 5;//nro del posteo a actualizar
 let queryPut = `posts/${numPosteoPut}`//ruta para put
 //objeto con los datos que se enviarán
 //los datos que se enviarán se deben enviar en formato JSON
@@ -49,7 +49,7 @@ let queryPut = `posts/${numPosteoPut}`//ruta para put
 let requestBodyPut = {
     id: 100,
     title: 'cuco',
-    body: 'barrita',
+    body: 'barrita de cuco',
     userId: 1
 };
 fetch(`${urlBase}/${queryPut}`, {//ruta y query
@@ -65,13 +65,14 @@ fetch(`${urlBase}/${queryPut}`, {//ruta y query
 //patch - se usa para actualizar información
 //se diferencia de put en que patch se usa para actualizar una parte de la información
 //datos que se enviarán
-let numPosteoPatch = 1;//nro del posteo a actualizar
+let numPosteoPatch = 10;//nro del posteo a actualizar
 let queryPatch = `posts/${numPosteoPatch}`;//ruta para patch
 //objeto con los datos que se enviarán
 //los datos que se enviarán se deben enviar en formato JSON
 //deben coincidir con los datos que se piden en la API
 let requestBodyPatch = {
     title: 'cucaracha',
+    body: 'Qué cucarachón lpm',
 };
 fetch(`${urlBase}/${queryPatch}`, {//ruta y query
     method: 'PATCH',//método post
@@ -85,3 +86,12 @@ fetch(`${urlBase}/${queryPatch}`, {//ruta y query
 
 
 //delete - se usa para eliminar información
+//datos que se enviarán
+let numPosteoDelete = 1;//nro del posteo a eliminar
+let queryDelete = `posts/${numPosteoDelete}`;//ruta para delete
+fetch(`${urlBase}/${queryDelete}`, {//ruta y query
+    method: 'DELETE',//método post
+})
+    .then(response => response.json()) //se convierte la respuesta a JSON
+    .then(json => console.log(json)); //se imprime en consola la respuesta
+
